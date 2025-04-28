@@ -17,7 +17,13 @@ It consists of two parts:
 
 ## 🗂️ Project Structure
 
-/ (root) ├── backend/ # Node.js + Express backend ├── frontend/ # React frontend ├── README.md # General project documentation ├── .gitignore
+```
+/ (root)
+├── backend/    # Node.js + Express backend
+├── frontend/   # React frontend
+├── README.md   # General project documentation
+├── .gitignore
+```
 
 ---
 
@@ -35,22 +41,49 @@ It consists of two parts:
 1. **Clone the repository**
    ```bash
    git clone https://github.com/cherryliuliuchen/FoodNutrientsSearch.git
----
+   ```
 
-## ✨ Main Features
-
-- **Food Search**: Search for food items and view detailed nutrient information
-- **User Authentication**: Register, login, and manage user sessions
-- **Personal Food List**: Save selected foods to a personal list
-- **Admin Functions**: Create and manage user accounts (admin only)
-
----
-
-## 🚀 Installation & Running the Project
-
-1. **Clone the repository**
+2. **Install backend dependencies**
    ```bash
-git clone https://github.com/cherryliuliuchen/FoodNutrientsSearch.git
-   Install backend dependencies
+   cd backend
+   npm install
+   ```
 
-   
+3. **Install frontend dependencies**
+   ```bash
+   cd ../frontend
+   npm install
+   ```
+
+4. **Setup environment variables**  
+   Create a `.env` file inside the `backend/` folder:
+
+   ```env
+   PORT=3000
+   DATABASE_URL=your-mongodb-url
+   JWT_SECRET=your-jwt-secret
+   USDA_API_KEY=your-usda-api-key
+   ```
+
+5. **Run backend**
+   ```bash
+   cd backend
+   npm run dev
+   ```
+
+6. **Run frontend**
+   ```bash
+   cd frontend
+   npm start
+   ```
+
+---
+
+## 📬 Contact
+
+If you have any questions or feedback, feel free to reach out:
+- **Email**: cherryliuliuchen@gmail.com
+
+---
+
+# 🎯 Thank you for checking out FoodNutrients!
