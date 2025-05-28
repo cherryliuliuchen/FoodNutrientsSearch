@@ -8,6 +8,7 @@ const logger = require('./logs/logger');
 const myFoodRoutes = require('./routes/myFoodRoutes');
 const userRoutes = require('./routes/userRoutes');
 const foodRoutes = require('./routes/foodRoutes'); 
+const myFavoriteRoutes = require('./routes/myFavoriteRoutes');
 
 const app = express();
 
@@ -24,6 +25,7 @@ app.use(express.json()); // Parse JSON data
 app.use('/api/myfood', myFoodRoutes);
 app.use('/api/user', userRoutes);
 app.use('/api/food', foodRoutes);
+app.use('/api/myfavorites', myFavoriteRoutes);
 
 // Root Route
 app.get('/', (req, res) => {
