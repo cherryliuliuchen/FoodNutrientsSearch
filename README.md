@@ -7,16 +7,12 @@ The FoodNutrients App is a full stack web-based food nutrition analysis applicat
 ## Project Structure
 
 - [Backend](./backend/README.md): The backend service built with Node.js and Express.
-- [Admin Frontend](./frontend-admin/README.md): The admin interface for managing the application, including user management and content moderation.
-- [User Frontend](./frontend-user/README.md): The user interface for searching and viewing food nutrition information.
-- [Prototype](./prototyp): Design prototypes and mockups for the application.
-- [API Documentation](./API%20doc/Food.collection.md): Documentation for the API endpoints used in the project.
+- [User Frontend](./frontend/README.md): The user interface for searching and viewing food nutrition information.
 
 ## Features
 
 - **Food Search**: Allows users to search for food items and view detailed nutrition information.
 - **User Registration/Login**: Supports user account creation, login, and authentication.
-- **Admin Management**: Provides admin users with tools to manage the application, including user management and data moderation.
 - **Integration with USDA API**: Uses the USDA API to fetch accurate food nutrition data.
 
 ## Getting Started
